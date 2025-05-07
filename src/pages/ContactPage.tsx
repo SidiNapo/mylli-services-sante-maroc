@@ -51,17 +51,25 @@ const ContactPage = () => {
       <Navbar />
       
       <main>
-        {/* Header */}
-        <section className="bg-mylli-lightblue py-16">
-          <div className="container mx-auto px-4">
+        {/* Header avec image de fond */}
+        <section className="relative py-24">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1920" 
+              alt="Contact" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-mylli-darkblue/70"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center">
               <div className="inline-block bg-blue-100 text-mylli-darkblue px-4 py-2 rounded-full font-medium text-sm mb-4">
                 Nous sommes à votre écoute
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 Contactez-nous
               </h1>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-100 max-w-2xl mx-auto">
                 Vous avez des questions ou vous souhaitez planifier une consultation? N'hésitez pas à nous contacter.
               </p>
             </div>
@@ -243,9 +251,17 @@ const ContactPage = () => {
           </div>
         </section>
         
-        {/* Call to Action */}
-        <section className="bg-mylli-lightblue py-16">
-          <div className="container mx-auto px-4">
+        {/* Call to Action with background */}
+        <section className="relative py-16">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&q=80&w=1920" 
+              alt="Soins à domicile" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-mylli-lightblue/90"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">
                 Besoin d'une consultation à domicile?

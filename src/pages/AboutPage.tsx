@@ -10,24 +10,32 @@ const AboutPage = () => {
       <Navbar />
       
       <main>
-        {/* Header */}
-        <section className="bg-mylli-lightblue py-16">
-          <div className="container mx-auto px-4">
+        {/* Header avec image de fond */}
+        <section className="relative py-24">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1666214280391-9863fcffa5e2?auto=format&fit=crop&q=80&w=1920" 
+              alt="Équipe médicale" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-mylli-darkblue/70"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center">
               <div className="inline-block bg-blue-100 text-mylli-darkblue px-4 py-2 rounded-full font-medium text-sm mb-4">
                 Qui nous sommes
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
                 À propos de Mylli Services
               </h1>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-100 max-w-3xl mx-auto">
                 Une entreprise marocaine dédiée à fournir des services de santé à domicile de haute qualité, avec compassion et professionnalisme.
               </p>
             </div>
           </div>
         </section>
         
-        {/* Our Story */}
+        {/* Notre Histoire - avec l'image fournie */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -43,20 +51,28 @@ const AboutPage = () => {
                   Aujourd'hui, nous sommes fiers de servir des communautés dans tout le Maroc, en apportant des soins spécialisés aux domiciles des patients, leur permettant de récupérer, de gérer des conditions chroniques ou simplement de vieillir dans le confort de leur foyer.
                 </p>
               </div>
-              <div>
+              <div className="rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src="/lovable-uploads/7e186f98-10f2-478f-b2b0-008952a3967c.png" 
-                  alt="Équipe Mylli Services" 
-                  className="rounded-lg shadow-xl"
+                  src="/lovable-uploads/c63d8cdf-3bb7-4be6-9f05-0c261a81e412.png" 
+                  alt="Infirmière discutant avec une patiente" 
+                  className="w-full h-auto"
                 />
               </div>
             </div>
           </div>
         </section>
         
-        {/* Our Vision & Mission */}
-        <section className="bg-gray-50 py-16">
-          <div className="container mx-auto px-4">
+        {/* Notre Vision & Mission - avec image de fond */}
+        <section className="relative py-16">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1920" 
+              alt="Soins médicaux" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gray-100/90"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <h3 className="text-2xl font-bold mb-4 text-mylli-darkblue">Notre vision</h3>
@@ -75,7 +91,7 @@ const AboutPage = () => {
           </div>
         </section>
         
-        {/* Our Values */}
+        {/* Nos Valeurs */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -138,12 +154,20 @@ const AboutPage = () => {
           </div>
         </section>
         
-        {/* Our Team */}
-        <section className="bg-gray-50 py-16">
-          <div className="container mx-auto px-4">
+        {/* Notre Équipe avec arrière-plan */}
+        <section className="relative py-16">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=1920" 
+              alt="Fond médical" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-mylli-darkblue/80"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">Notre équipe</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold mb-4 text-white">Notre équipe</h2>
+              <p className="text-blue-100 max-w-2xl mx-auto">
                 Notre équipe de professionnels de la santé est dédiée à fournir des soins exceptionnels avec compassion et expertise.
               </p>
             </div>
@@ -151,7 +175,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/lovable-uploads/286d6d86-fdcd-4a35-940e-c09d679ecc51.png" 
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=600" 
                   alt="Dr. Khalid Alaoui" 
                   className="w-full h-64 object-cover object-center"
                 />
@@ -166,7 +190,7 @@ const AboutPage = () => {
               
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/lovable-uploads/97c1a968-4e9d-4c9b-8b59-f5967a8d774d.png" 
+                  src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&q=80&w=600" 
                   alt="Fatima Benkirane" 
                   className="w-full h-64 object-cover object-center"
                 />
@@ -181,7 +205,7 @@ const AboutPage = () => {
               
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/lovable-uploads/0b9e9cac-d087-48ab-a9a8-250b295f942e.png" 
+                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600" 
                   alt="Omar Bouazza" 
                   className="w-full h-64 object-cover object-center"
                 />
