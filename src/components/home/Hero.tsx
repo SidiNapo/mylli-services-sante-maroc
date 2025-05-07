@@ -22,7 +22,8 @@ const Hero = () => {
     "/lovable-uploads/bf851f2a-ffda-4ee0-8a2c-30c1f9740689.png",
     "/lovable-uploads/97c1a968-4e9d-4c9b-8b59-f5967a8d774d.png",
     "/lovable-uploads/912d6130-9281-45c1-afb0-99971e380b8b.png",
-    "/lovable-uploads/e7d93a1e-5c24-4394-96a5-d9c025fe9bf9.png"
+    "/lovable-uploads/e7d93a1e-5c24-4394-96a5-d9c025fe9bf9.png",
+    "/lovable-uploads/6254494f-d311-42c4-aae9-5bd12be46130.png" // Added the new pediatric care image
   ];
 
   return (
