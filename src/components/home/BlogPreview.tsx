@@ -63,7 +63,7 @@ const BlogPreview = () => {
             excerpt="Découvrez comment les soins infirmiers à domicile peuvent améliorer la qualité de vie des patients et faciliter leur rétablissement."
             author="Dr. Laila Bennani" 
             date="24 mai 2025"
-            image="/lovable-uploads/97c1a968-4e9d-4c9b-8b59-f5967a8d774d.png"
+            image="/lovable-uploads/fff27802-f0fb-466c-a1b6-cb8394bf230a.png"
           />
           
           <BlogPost 
@@ -71,6 +71,7 @@ const BlogPreview = () => {
             excerpt="Des conseils pratiques pour maintenir une bonne santé physique et mentale à chaque étape de votre vie."
             author="Samira El Fassi" 
             date="18 mai 2025"
+            image="/lovable-uploads/02ec58cf-3403-4b50-bd1c-fea24f9cd492.png"
           />
           
           <BlogPost 
@@ -78,7 +79,7 @@ const BlogPreview = () => {
             excerpt="Guide pratique pour aider les familles à gérer efficacement les médicaments de leurs proches à domicile."
             author="Mohamed Chakir" 
             date="10 mai 2025"
-            image="/lovable-uploads/912d6130-9281-45c1-afb0-99971e380b8b.png"
+            image="/lovable-uploads/41793568-97a5-4e0c-8034-5a4ef3fb6eac.png"
           />
         </div>
 
