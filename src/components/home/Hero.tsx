@@ -1,55 +1,32 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Heart, Users, Activity, Clock } from "lucide-react";
 import { useEffect, useState } from "react";
-
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const carouselImages = [
-    "/lovable-uploads/bf851f2a-ffda-4ee0-8a2c-30c1f9740689.png",
-    "/lovable-uploads/97c1a968-4e9d-4c9b-8b59-f5967a8d774d.png",
-    "/lovable-uploads/912d6130-9281-45c1-afb0-99971e380b8b.png",
-    "/lovable-uploads/e7d93a1e-5c24-4394-96a5-d9c025fe9bf9.png",
-    "/lovable-uploads/6254494f-d311-42c4-aae9-5bd12be46130.png" // Added the new pediatric care image
+  const carouselImages = ["/lovable-uploads/bf851f2a-ffda-4ee0-8a2c-30c1f9740689.png", "/lovable-uploads/97c1a968-4e9d-4c9b-8b59-f5967a8d774d.png", "/lovable-uploads/912d6130-9281-45c1-afb0-99971e380b8b.png", "/lovable-uploads/e7d93a1e-5c24-4394-96a5-d9c025fe9bf9.png", "/lovable-uploads/6254494f-d311-42c4-aae9-5bd12be46130.png" // Added the new pediatric care image
   ];
-
-  return (
-    <div className="relative bg-gradient-to-r from-blue-900 to-blue-800 overflow-hidden">
+  return <div className="relative bg-gradient-to-r from-blue-900 to-blue-800 overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       
       {/* Hero Carousel */}
-      {mounted && (
-        <div className="absolute inset-0">
-          <Carousel className="h-full" opts={{ loop: true }}>
+      {mounted && <div className="absolute inset-0">
+          <Carousel className="h-full" opts={{
+        loop: true
+      }}>
             <CarouselContent className="h-full">
-              {carouselImages.map((image, index) => (
-                <CarouselItem key={index} className="h-full">
+              {carouselImages.map((image, index) => <CarouselItem key={index} className="h-full">
                   <div className="h-full w-full">
-                    <img 
-                      src={image}
-                      alt={`Soins à domicile ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={image} alt={`Soins à domicile ${index + 1}`} className="w-full h-full object-cover" />
                   </div>
-                </CarouselItem>
-              ))}
+                </CarouselItem>)}
             </CarouselContent>
           </Carousel>
-        </div>
-      )}
+        </div>}
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-24 md:py-32 lg:py-40 relative z-20">
@@ -66,14 +43,12 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                <Link to="/contact">
+                <Link to="/contact" className="px-0 mx-[2px]">
                   Demande d'information
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/services">
-                  En savoir plus
-                </Link>
+                
               </Button>
             </div>
           </div>
@@ -111,8 +86,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
